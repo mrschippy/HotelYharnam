@@ -55,3 +55,14 @@ CREATE TABLE Booking_Features (
 
 
 
+In the customers table in your database, a guest name column might be useful in order to connect the actual customer rather than a customer id to bookings
+
+database.php handles many different responsibilities. Consider splitting it up.
+
+booking.php:5-25 - consider implementing error handling
+
+functions.php:13-44 - consider implementing error handling
+
+There are many hard-coded values in your code. It might be better to move them to a config file for ease of maintenance and modification
+
+Adding visual user feedback if something goes wrong might improve UX
